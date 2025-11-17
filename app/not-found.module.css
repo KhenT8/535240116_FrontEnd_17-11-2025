@@ -1,0 +1,97 @@
+.container {
+  margin-top: 3rem;
+}
+
+.bounceAnimation {
+  animation: bounce 2s infinite;
+}
+
+.delay1 {
+  animation-delay: 0.2s;
+}
+
+.delay2 {
+  animation-delay: 0.4s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.customCard {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: 3px dashed #FF69B4;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.customCard:hover {
+  transform: translateY(-5px);
+}
+
+.gradientText {
+  background: linear-gradient(45deg, #FF69B4, #00CED1, #8B4513);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.customAlert {
+  background: rgba(255, 193, 7, 0.2);
+  border-radius: 15px;
+  border: none;
+}
+
+.customBtn {
+  transition: transform 0.2s ease;
+}
+
+.customBtn:hover {
+  transform: scale(1.05);
+}
+
+.factCard {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+
+.decorativeIcon {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.statsCard {
+  transition: transform 0.3s ease;
+}
+
+.statsCard:hover {
+  transform: scale(1.05);
+}
+
+.pinkBg {
+  background: rgba(255, 105, 180, 0.1);
+}
+
+.cyanBg {
+  background: rgba(0, 206, 209, 0.1);
+}
+
+.brownBg {
+  background: rgba(139, 69, 19, 0.1);
+}

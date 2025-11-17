@@ -1,0 +1,19 @@
+﻿generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model IceCream {
+  id          Int      @id @default(autoincrement())
+  name        String
+  brand       String
+  rating      Int
+  isFavorite  Boolean  @default(false)
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
